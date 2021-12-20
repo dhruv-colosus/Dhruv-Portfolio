@@ -1,0 +1,18 @@
+@media only screen and (max-width: 800px) {
+  .skills_responsive {
+    padding-top: 8rem;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .skills_responsive_box {
+    padding: 2rem;
+    height: 60vh;
+    width: 50vw !important;
+  }
+}
