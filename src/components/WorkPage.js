@@ -6,8 +6,8 @@ import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
 import "./WorkPage.css";
 
-import { Works } from "../data/WorkDataa";
-import BlogComponent from "./WorkComponent";
+import { Works, WorksMERN, WorksReact } from "../data/WorkDataa";
+import WorkComponent from "./WorkComponent";
 import AnchorComponent from "../subComponents/Anchor";
 import BigTitle from "../subComponents/BigTitlte";
 import { motion } from "framer-motion";
@@ -77,13 +77,40 @@ const WorkPage = () => {
         <PowerButton />
         <SocialIcons />
         <AnchorComponent number={numbers} />
-        <Center>
-          <Grid className="grid_responsive">
-            {Works.map((work) => {
-              return <BlogComponent key={work.id} blog={work} />;
-            })}
-          </Grid>
-        </Center>
+
+        <div className="work_box_container">
+          <h1>MERN STACK</h1>
+
+          <Center>
+            <Grid className="grid_responsive">
+              {WorksMERN.map((work) => {
+                return <WorkComponent key={work.id} blog={work} />;
+              })}
+            </Grid>
+          </Center>
+        </div>
+        <div className="work_box_container">
+          <h1>React JS</h1>
+
+          <Center>
+            <Grid className="grid_responsive">
+              {WorksReact.map((work) => {
+                return <WorkComponent key={work.id} blog={work} />;
+              })}
+            </Grid>
+          </Center>
+        </div>
+        <div className="work_box_container">
+          <h1>More Projects</h1>
+
+          <Center>
+            <Grid className="grid_responsive">
+              {Works.map((work) => {
+                return <WorkComponent key={work.id} blog={work} />;
+              })}
+            </Grid>
+          </Center>
+        </div>
         <BigTitle text="WORKS" top="5rem" left="5rem" />
       </Container>
     </MainContainer>

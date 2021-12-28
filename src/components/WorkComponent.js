@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-
+import "./WorkComponent.css";
 const Box = styled(motion(NavLink))`
   width: calc(10rem + 15vw);
   text-decoration: none;
@@ -75,10 +75,10 @@ const Item = {
   },
 };
 
-const BlogComponent = (props) => {
+const WorkComponent = (props) => {
   const { name, tags, date, imgSrc, link } = props.blog;
   return (
-    <Container variants={Item}>
+    <Container className="hover_work" variants={Item}>
       <Box target="_blank" to={{ pathname: link }}>
         <Image img={imgSrc} />
         <Title>{name}</Title>
@@ -87,10 +87,12 @@ const BlogComponent = (props) => {
             return <Tag key={id}>#{t}</Tag>;
           })}
         </HashTags>
-        <Date>{date}</Date>
+        <div className="bottom_flex">
+          <Date>{date}</Date>
+        </div>
       </Box>
     </Container>
   );
 };
 
-export default BlogComponent;
+export default WorkComponent;
