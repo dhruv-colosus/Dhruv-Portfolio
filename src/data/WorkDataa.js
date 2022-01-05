@@ -36,6 +36,14 @@ export const WorksReact = [
     imgSrc: "https://i.imgur.com/v5VRvUI.png",
     link: "https://dhruv-colosus.github.io/Color-Note/",
   },
+  {
+    id: 4,
+    name: "Crypto-Mate Web App",
+    tags: ["react", "axios", "mui-v4", "api", "chart-js"],
+    date: "5 Jan, 2022",
+    imgSrc: "https://i.imgur.com/NQWUx5c.png",
+    link: "https://github.com/dhruv-colosus/Crypto-Mate",
+  },
 ];
 
 export const Works = [
