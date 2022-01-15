@@ -73,7 +73,7 @@ const SocialIcons = (props) => {
         <NavLink
           style={{ color: "inherit" }}
           target="_blank"
-          to={{ pathname: "https://www.instagram.com/dhruv_uchiha/" }}
+          to={{ pathname: "https://www.instagram.com/helicopter_uchiha/" }}
         >
           <Instagram
             width={25}
